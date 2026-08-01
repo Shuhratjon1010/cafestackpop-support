@@ -83,10 +83,17 @@
       play, or what device you play on.
     </p>
     <p>
-      The one network request the game can make is an optional check for
-      updated event dates and prices. It carries no identifier, and if it fails
-      the game simply uses the values built into the app — which is why
-      everything works with no connection at all.
+      The game makes two kinds of network request, neither of which carries an
+      identifier. The first is an optional check for updated event dates and
+      prices; if it fails, the game uses the values built into the app. The
+      second downloads the game's typefaces from a public content delivery
+      network (jsDelivr) the first time you launch it, which means that network
+      sees your device's IP address, as any web request would. If it fails, the
+      game falls back to your device's system font.
+    </p>
+    <p>
+      Neither request tells us anything about you, and the game remains fully
+      playable with no connection at all.
     </p>
   </div>
 
