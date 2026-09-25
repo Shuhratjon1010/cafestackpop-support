@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://shuhratjon1010.github.io/cafestackpop-support/sitemap.xml
